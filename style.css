@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 82px 1fr;
+    padding: 32px 16px 0px 16px;
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+#divheader{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+h1{
+    font-size: 2.5rem;
+    padding-right: 1rem;
+}
+#lupa{
+    height: 2rem;
+    
+}
+#cesta{
+    height: 3rem;
+}
+#Login{
+    display: flex;
+    background-color: #ffe195;
+    border-radius: 25px;
+    position: relative;
+    height: 60px;
+}
+#Login > span{
+    position: relative;
+    text-align: center;
+    line-height: 3.75rem;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 23px;
+}
+#Login > img{
+    position: relative;
+    height: 50px;
+    padding-top: 8px;
+    padding-right: 10px;
+    line-height: 90px;
+}
+#Sing{
+    display: flex;
+    border: 1px solid ;
+    border-radius: 25px;
+    position: relative;
+    height: 60px;
+    background-color: black;
+}
+#Sing > span{
+    position: relative;
+    line-height: 3.75rem;
+    padding-right: 0.625rem;
+    font-weight: bold;
+    color: white;
+    font-size: 23px;
+}
+#Sing > img {
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+#menu{
+    height: 40px;
+    width: 60px;
+    line-height: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "p1 p2"
+    ;
+    height: 25rem;
+    grid-template-columns: 28.125rem 17.875rem;
+}
+#total{
+    grid-area: p1;
+    padding-top: 8rem;
+}
+#preço{
+    font-size: 2.5rem;
+}
+#preço > span{
+    font-weight: bold;
+}
+#mais{
+    grid-area: p2;
+    padding-top: 4rem;
+}
+#mais > span{
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+#hamburguer{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.setas{
+    font-size: 2rem;
+    box-shadow: inset 0 0 6px 1px black;
+    border-radius: 32px;
+    text-align: center;
+    place-self: center;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#fundo{
+    position: absolute;
+    bottom: 0;
+    height: 28.125rem;
+    width: 46.875rem;
+}
+#salada{
+    position: absolute;
+    bottom: 14rem;
+    z-index: +1;
+    height: 26rem;
+    right: 8rem;
+}
+#resumo{
+    background-color: orange;
+    position: absolute;
+    padding: 120px 32px 32px 32px;
+    bottom: 40px;
+    right: 240px;
+    width: 280px;
+    height: 300px;
+    border-radius: 32px;
+}
+#info{
+    display: flex;
+    padding-bottom: 30px;
+}
+#info > span{
+    font-size: 45px;
+    color: white;
+}
+#info > span:first-child{
+    padding-right: 35px;
+}
+#info > img{
+    height: 45px;
+}
+#tempo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 32px;
+    height: 50px;
+    gap: 20px;
+}
+#tempo > img{
+    height: 40px;
+}
+#tempo > span{
+    color: white;
+    font-weight: bold;
+}
